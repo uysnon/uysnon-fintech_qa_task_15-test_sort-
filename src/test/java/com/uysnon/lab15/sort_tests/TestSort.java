@@ -62,10 +62,13 @@ public class TestSort {
     public void testBubbleRepeat() {
         MatcherAssert.assertThat("Ошибка\nСортировка: Bubble\n  Массив из повторяющихся значений",
                 testArray(SortArrays.sortBubble(REPEAT_ARRAY)));
+
     }
 
     /**
      * Тест для сортировки пузырьком на массиве из значений, превышающих тип int
+     * (НАВЕРНОЕ ОЧЕНЬ БОЯЗЛИВЫЙ ИЛИ ПРЕДУСМОТРИТЕЛЬНЫЙ ПРОГРАММИСТ ДОЛЖЕН ПРОВЕРЯТЬ, ЧТО ЭЛЕМЕНТ В МАССИВЕ = Integer.MAX_VALUE
+     * И ЗАПОДОЗРИТЬ ЧТО-ТО НЕЛАДНОЕ). Возможно проверка высосана из пальца, но она выкидывает ошибку :)
      */
     @Test
     public void testBubbleTooLarge() {
