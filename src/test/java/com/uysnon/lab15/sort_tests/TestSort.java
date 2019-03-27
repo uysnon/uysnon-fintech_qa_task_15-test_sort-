@@ -13,7 +13,7 @@ import org.junit.Test;
  */
 public class TestSort {
     /**
-     * Массив из множества элементов
+     * Массив из множества целочисленных элементов
      */
     private static final int[] NORMAL_ARRAY = {2, 4, 3, -45, 2390, 3, 54, 31};
     /**
@@ -21,7 +21,7 @@ public class TestSort {
      */
     private static final int[] EMPTY_ARRAY = {};
     /**
-     * Массив из повторящющихся символов
+     * Массив из повторящющихся элелементов
      */
     private static final int[] REPEAT_ARRAY = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
     /**
@@ -79,11 +79,11 @@ public class TestSort {
     }
 
     /**
-     * Тест для сортировки пузырьком на "нормальном" массиве
+     * Тест для сортировки пузырьком на  массиве с отрицательными числами
      */
     @Test
     public void testBubbleNegative() {
-        MatcherAssert.assertThat("Ошибка!\nСортировка: Bubble\n Обычный массив",
+        MatcherAssert.assertThat("Ошибка!\nСортировка: Bubble\nМассив  с отрицательными числами",
                 testArray(SortArrays.sortBubble(NEGATIVE_ARRAY)));
     }
 
